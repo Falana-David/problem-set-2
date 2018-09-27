@@ -23,14 +23,46 @@ public class ProblemSet2 {
 		Scanner in = new Scanner(System.in);
 		float grade = in.nextFloat();
 		System.out.println();
-		System.out.println("Enter Your Quiz Grade!");
+		
+		System.out.println("Enter Your Homework Grade!");
 		Scanner in1 = new Scanner(System.in);
 		float grade1 = in1.nextFloat();
 		System.out.println();
-		System.out.println("Enter Your Test Grade!");
+		
+		System.out.println("Enter Your Homework Grade!");
 		Scanner in11 = new Scanner(System.in);
 		float grade2 = in11.nextFloat();
-		float finalgrade = (float) (grade * 0.15 + grade1 * 0.30 + grade2 * 0.55);
+		System.out.println();
+		
+		System.out.println("Enter Your Quiz Grade!");
+		Scanner in111 = new Scanner(System.in);
+		float grade3 = in111.nextFloat();
+		System.out.println();
+		
+		System.out.println("Enter Your Quiz Grade!");
+		Scanner in1111 = new Scanner(System.in);
+		float grade4 = in1111.nextFloat();
+		System.out.println();
+		
+		System.out.println("Enter Your Quiz Grade!");
+		Scanner in11111 = new Scanner(System.in);
+		float grade5 = in11111.nextFloat();
+		System.out.println();
+		
+		
+		System.out.println("Enter Your Test Grade!");
+		Scanner in111111 = new Scanner(System.in);
+		float grade6 = in111111.nextFloat();
+		
+		System.out.println("Enter Your Test Grade!");
+		Scanner in1111111 = new Scanner(System.in);
+		float grade7 = in1111111.nextFloat();
+		
+		System.out.println("Enter Your Test Grade!");
+		Scanner in11111111 = new Scanner(System.in);
+		float grade8 = in11111111.nextFloat();
+		
+		float finalgrade = (float) ((float) ((grade + grade1 + grade2)*0.15 /3) + ((grade3 + grade4 + grade5)*0.30 / 3) + ((grade6 + grade7 + grade8))*0.55 / 3);
 		System.out.println();
 		System.out.println("Your Final Grade Is A");
 		System.out.print(finalgrade);
@@ -59,7 +91,10 @@ public class ProblemSet2 {
 		System.out.println("The Amount Of People on The Bus Is: "+ (teachers + people));
 		System.out.println();
 		int bus = (people + teachers) / 46 + 1;
+		int nums = (people + teachers) - 47;
 		System.out.println("Buses Required " + bus );
+		System.out.println();
+		System.out.println("The Amount of People On The Second Bus: " + nums);
 		}
 	}
 	
